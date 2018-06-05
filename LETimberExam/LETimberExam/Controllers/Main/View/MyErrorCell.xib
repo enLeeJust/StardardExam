@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="MyErrorCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_error" translatesAutoresizingMaskIntoConstraints="NO" id="A7x-aF-bbf">
+                        <rect key="frame" x="16" y="22" width="19" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="19" id="DgU-jP-nWt"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_error_review" translatesAutoresizingMaskIntoConstraints="NO" id="iRG-hx-urw">
+                        <rect key="frame" x="287" y="22" width="19" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="19" id="7VA-DE-B4o"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uM9-Fb-QMr">
+                        <rect key="frame" x="43" y="23" width="189" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ihj-Pc-toD">
+                        <rect key="frame" x="234" y="23" width="34" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="uTt-9K-iXA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.98594832420349121" green="0.0" blue="0.026950567960739136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMl-jJ-tEx">
+                        <rect key="frame" x="270" y="23" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="9wl-SK-bw6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ihj-Pc-toD" firstAttribute="firstBaseline" secondItem="dMl-jJ-tEx" secondAttribute="firstBaseline" id="440-my-nm3"/>
+                    <constraint firstItem="Ihj-Pc-toD" firstAttribute="leading" secondItem="uM9-Fb-QMr" secondAttribute="trailing" constant="2" id="99J-da-fGd"/>
+                    <constraint firstItem="Ihj-Pc-toD" firstAttribute="baseline" secondItem="dMl-jJ-tEx" secondAttribute="baseline" id="9cc-S3-o5h"/>
+                    <constraint firstItem="uM9-Fb-QMr" firstAttribute="bottom" secondItem="Ihj-Pc-toD" secondAttribute="bottom" id="EF3-z4-cvB"/>
+                    <constraint firstItem="uM9-Fb-QMr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="I0N-T2-I2t"/>
+                    <constraint firstItem="A7x-aF-bbf" firstAttribute="centerY" secondItem="uM9-Fb-QMr" secondAttribute="centerY" id="NHq-eb-yRM"/>
+                    <constraint firstItem="uM9-Fb-QMr" firstAttribute="leading" secondItem="A7x-aF-bbf" secondAttribute="trailing" constant="8" symbolic="YES" id="OoW-Dk-3rN"/>
+                    <constraint firstItem="dMl-jJ-tEx" firstAttribute="leading" secondItem="Ihj-Pc-toD" secondAttribute="trailing" constant="2" id="Q1b-Uw-ZrV"/>
+                    <constraint firstItem="uM9-Fb-QMr" firstAttribute="top" secondItem="Ihj-Pc-toD" secondAttribute="top" id="Uer-z8-pkA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iRG-hx-urw" secondAttribute="trailing" constant="-2" id="Upm-ot-lNA"/>
+                    <constraint firstItem="A7x-aF-bbf" firstAttribute="top" secondItem="iRG-hx-urw" secondAttribute="top" id="VSj-an-Io6"/>
+                    <constraint firstItem="A7x-aF-bbf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="k88-mE-Nq7"/>
+                    <constraint firstItem="A7x-aF-bbf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="n7p-nz-8tz"/>
+                    <constraint firstItem="dMl-jJ-tEx" firstAttribute="centerY" secondItem="iRG-hx-urw" secondAttribute="centerY" id="oHV-Ad-bvY"/>
+                    <constraint firstItem="iRG-hx-urw" firstAttribute="leading" secondItem="dMl-jJ-tEx" secondAttribute="trailing" constant="1" id="srh-TQ-Jdd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iRG-hx-urw" secondAttribute="bottom" constant="8" id="uZd-Ku-rri"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="myErrorCourseLabel" destination="uM9-Fb-QMr" id="ZS5-yn-Svb"/>
+                <outlet property="myErrorSumLabel" destination="Ihj-Pc-toD" id="XcA-k9-acq"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="161"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_error" width="20" height="20"/>
+        <image name="ic_error_review" width="21" height="20"/>
+    </resources>
+</document>

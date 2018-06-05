@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="启动页.png" translatesAutoresizingMaskIntoConstraints="NO" id="EVG-wW-z64">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="启动页_06.png" translatesAutoresizingMaskIntoConstraints="NO" id="twQ-zc-Gni">
+                                <rect key="frame" x="117" y="525" width="210" height="60"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="启动页_03.png" translatesAutoresizingMaskIntoConstraints="NO" id="W7r-yg-MJ1">
+                                <rect key="frame" x="49" y="525" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Mbi-Dl-GBu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海天柏信息科技有限公司" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="QUk-ff-owj">
+                                <rect key="frame" x="20" y="624" width="336" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Z5o-ru-YaD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QUk-ff-owj" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="4" id="2iv-uw-c4R"/>
+                            <constraint firstItem="W7r-yg-MJ1" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="505" id="4y5-PV-exP"/>
+                            <constraint firstItem="EVG-wW-z64" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="8Mp-uN-pfH"/>
+                            <constraint firstItem="EVG-wW-z64" firstAttribute="centerX" secondItem="QUk-ff-owj" secondAttribute="centerX" id="8PR-dH-1Cx"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="QUk-ff-owj" secondAttribute="bottom" constant="22" id="9z4-pU-PQ8"/>
+                            <constraint firstItem="W7r-yg-MJ1" firstAttribute="top" secondItem="twQ-zc-Gni" secondAttribute="top" id="CrP-FC-ee0"/>
+                            <constraint firstItem="W7r-yg-MJ1" firstAttribute="bottom" secondItem="twQ-zc-Gni" secondAttribute="bottom" id="Hhi-PT-W0b"/>
+                            <constraint firstItem="twQ-zc-Gni" firstAttribute="leading" secondItem="W7r-yg-MJ1" secondAttribute="trailing" constant="8" symbolic="YES" id="Qeg-BK-zDr"/>
+                            <constraint firstItem="EVG-wW-z64" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="dna-7p-bpw"/>
+                            <constraint firstItem="EVG-wW-z64" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="j6D-Gr-bVV"/>
+                            <constraint firstAttribute="trailing" secondItem="EVG-wW-z64" secondAttribute="trailing" id="nOQ-p1-Mzd"/>
+                            <constraint firstItem="W7r-yg-MJ1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="33" id="nXf-c0-yM9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="twQ-zc-Gni" secondAttribute="trailing" constant="32" id="nvI-Ln-idB"/>
+                            <constraint firstItem="QUk-ff-owj" firstAttribute="top" secondItem="W7r-yg-MJ1" secondAttribute="bottom" constant="39" id="seO-hC-46p"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="160"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="启动页.png" width="750" height="1334"/>
+        <image name="启动页_03.png" width="80" height="80"/>
+        <image name="启动页_06.png" width="267" height="40"/>
+    </resources>
+</document>
